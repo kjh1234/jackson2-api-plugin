@@ -25,7 +25,7 @@
   </parent>
 
   <artifactId>jackson2-api</artifactId>
-  <version>2.12.1</version>
+  <version>2.12.1-1</version>
   <packaging>hpi</packaging>
 
   <name>Jackson 2 API Plugin</name>
@@ -60,11 +60,11 @@
     <connection>scm:git:git://github.com/jenkinsci/jackson2-api-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/jackson2-api-plugin.git</developerConnection>
     <url>https://github.com/jenkinsci/jackson2-api-plugin</url>
-    <tag>jackson2-api-2.12.1</tag>
+    <tag>jackson2-api-2.12.1-1</tag>
   </scm>
 
   <properties>
-    <revision>2.12.1</revision>
+    <revision>2.12.1-1</revision>
     <changelist>-SNAPSHOT</changelist>
     <java.level>8</java.level>
     <jenkins.version>2.222.4</jenkins.version>
@@ -121,7 +121,7 @@
       <artifactId>jackson-datatype-json-org</artifactId>
       <version>${jackson.version}</version>
     </dependency>
-    
+
     <dependency>
       <groupId>com.fasterxml.jackson.module</groupId>
       <artifactId>jackson-module-parameter-names</artifactId>
@@ -146,7 +146,7 @@
       <version>${jackson.version}</version>
     </dependency>
 
-    <dependency>
+<!-- 쿠버네티스 빌드시 YML 의존성 에러     <dependency>
       <groupId>com.fasterxml.jackson.dataformat</groupId>
       <artifactId>jackson-dataformat-yaml</artifactId>
       <version>${jackson.version}</version>
@@ -161,6 +161,6 @@
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>snakeyaml-api</artifactId>
-    </dependency>
+    </dependency> -->
   </dependencies>
 </project>
